@@ -1,0 +1,26 @@
+{
+  "name": "Demo Create VM From QCOW2",
+  "version": "1.0.0",
+  "description": "Nutanix AHV Automatic Image Upload and VM Creation Script",
+  "dependencies": {
+    "nutanix_prism": "",
+    "uuid": ""
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nutanix",
+    "Prism",
+    "API",
+    "VM",
+    "Creation",
+    "Deployment",
+    "Automated",
+    "Image Upload",
+    "Javascript"
+  ],
+  "author": "wade@nutanix.com",
+  "license": "ISC"
+}
