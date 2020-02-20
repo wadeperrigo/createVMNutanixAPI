@@ -1,26 +1,35 @@
 {
-  "name": "Demo Create VM From QCOW2",
+  "name": "create_nutanix_vm_api",
   "version": "1.0.0",
-  "description": "Nutanix AHV Automatic Image Upload and VM Creation Script",
-  "dependencies": {
-    "nutanix_prism": "",
-    "uuid": ""
-  },
+  "description": "Ability to upload a qcow2 and convert that into a working VM on Nutanix using API's only",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wadeperrigo/createVMNutanixAPI.git"
+  },
+  "dependencies": {
+    "nutanix_prism": ">=1.0.13",
+    "uuid": ">=3.4.0"
+  },
   "keywords": [
-    "Nutanix",
-    "Prism",
-    "API",
-    "VM",
-    "Creation",
-    "Deployment",
-    "Automated",
-    "Image Upload",
-    "Javascript"
+    "\"Nutanix\"",
+    "\"Prism\"",
+    "\"API\"",
+    "\"VM\"",
+    "\"Creation\"",
+    "\"Deployment\"",
+    "\"Automated\"",
+    "\"Image",
+    "Upload\"",
+    "\"Javascript\""
   ],
-  "author": "wade@nutanix.com",
-  "license": "ISC"
+  "author": "Wade.Perrigo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wadeperrigo/createVMNutanixAPI/issues"
+  },
+  "homepage": "https://github.com/wadeperrigo/createVMNutanixAPI#readme"
 }
