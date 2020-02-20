@@ -3,10 +3,10 @@
 const PRISM = require('nutanix_prism')
 const UUID = require('uuid/v1')
 
-const IMAGEURL = 'http://10.X.X.X/images/CentOS/centos7-w-ngt-disk.qcow2'
-const CLUSTER_IP = '10.55.37.37'
+const IMAGEURL = 'http://10.55.X.X/images/CentOS/centos7-w-ngt-disk.qcow2'
+const CLUSTER_IP = '10.55.XX.XX'
 const CLUSTER_USERNAME = 'admin'
-const CLUTER_PASSWORD = 'nx2Tech037!'
+const CLUTER_PASSWORD = 'ntnxLabs2!'
 const IMAGENAME = 'Test VM Disk'
 const CONTAINERNAME = 'default-container-XXXXX'
 const VMNAME = 'Testing VM-0'
