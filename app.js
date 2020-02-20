@@ -4,6 +4,9 @@ const PRISM = require('nutanix_prism')
 const UUID = require('uuid/v1')
 
 const IMAGEURL = 'http://10.X.X.X/images/CentOS/centos7-w-ngt-disk.qcow2'
+const CLUSTER_IP = '10.55.37.37'
+const CLUSTER_USERNAME = 'admin'
+const CLUTER_PASSWORD = 'nx2Tech037!'
 const IMAGENAME = 'Test VM Disk'
 const CONTAINERNAME = 'default-container-XXXXX'
 const VMNAME = 'Testing VM-0'
@@ -12,8 +15,8 @@ const THISUUID = UUID()
 let thisTask = {
     uuid: THISUUID,
     type: 'imagesAndVMs',
-    prismIP: '10.55.37.37',
-    prismPass: 'nx2Tech037!',
+    prismIP: CLUSTER_IP,
+    prismPass: CLUTER_PASSWORD,
     url: IMAGEURL,
     imageName: IMAGENAME,
     containerName: CONTAINERNAME,
@@ -52,10 +55,10 @@ let thisSubTask3 = {
     status: 'pending'                                           
 }
 let opts = {
-    ip: thisTask.prismIP,
+    ip: CLUSTER_IP,
     creds: {
-        username: 'admin',
-        password: thisTask.prismPass
+        username: CLUSTER_USERNAME,
+        password: CLUTER_PASSWORD
     }
 }
 
@@ -80,7 +83,7 @@ function start (thisTask, thisSubTask1,thisSubTask2,thisSubTask3) {
         let opts = {
             ip: thisTask.prismIP,
             creds: {
-                username: 'admin',
+                username: thisTask.username,
                 password: thisTask.prismPass
             },
             containerName: thisTask.containerName,
